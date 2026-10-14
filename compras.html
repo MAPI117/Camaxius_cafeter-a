@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#6B1E2B" name="theme-color"/>
+  <title>
+   Seleccionar compras | 141 LEGENDS
+  </title>
+  <link href="assets/estilos.css" rel="stylesheet"/>
+  <script defer="" src="assets/app.js">
+  </script>
+ </head>
+ <body data-pagina="compras">
+  <!-- Encabezado con navegación y contador del carrito. -->
+  <header class="encabezado">
+   <div class="marca">
+    <a href="index.html">
+     <img alt="Logo CETIS 141" src="assets/logo.png"/>
+    </a>
+    <div class="nombre">
+     <h1>
+      141 LEGENDS
+     </h1>
+     <p>
+      LA ONLINE SHOP · COOPERATIVA ESCOLAR
+     </p>
+    </div>
+   </div>
+   <nav aria-label="Navegación principal" class="menu-principal">
+    <ul>
+     <li>
+      <a class="" href="index.html">
+       Inicio
+      </a>
+     </li>
+     <li>
+      <a class="activo" href="compras.html">
+       Productos
+      </a>
+     </li>
+     <li>
+      <a class="" href="carrito.html">
+       Carrito
+       <span class="contador" data-contador="">
+        0
+       </span>
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <!-- Catálogo con filtros y menú semanal de la cooperativa. -->
+  <main class="container">
+   <section aria-labelledby="catalogo-titulo">
+    <div class="barra-catalogo">
+     <div>
+      <span class="etiqueta">
+       TIENDA ESCOLAR
+      </span>
+      <h2 class="titulo-seccion" id="catalogo-titulo">
+       ¿Qué se te antoja hoy?
+      </h2>
+      <p class="subtitulo">
+       Explora tus productos favoritos y revisa el menú de la semana.
+      </p>
+      <p class="saludo" id="saludo">
+      </p>
+     </div>
+     <a class="btn btn-dorado" href="carrito.html">
+      Mi carrito 🛒
+      <span data-contador="">
+       0
+      </span>
+     </a>
+    </div>
+    <div class="tienda-layout">
+     <div class="tienda-principal">
+      <div class="catalogo-encabezado">
+       <div>
+        <h3>
+         Productos de la cooperativa
+        </h3>
+        <p>
+         Bebidas, botanas y algo dulce para el recreo.
+        </p>
+       </div>
+       <span class="etiqueta">
+        12 productos
+       </span>
+      </div>
+      <div aria-label="Filtrar productos" class="filtros-productos" role="group">
+       <button aria-pressed="true" class="filtro activo" data-filtro="todos" type="button">
+        Todos
+       </button>
+       <button aria-pressed="false" class="filtro" data-filtro="bebidas" type="button">
+        🥤 Bebidas
+       </button>
+       <button aria-pressed="false" class="filtro" data-filtro="galletas" type="button">
+        🍪 Galletas
+       </button>
+       <button aria-pressed="false" class="filtro" data-filtro="dulces" type="button">
+        🍬 Dulces
+       </button>
+       <button aria-pressed="false" class="filtro" data-filtro="botanas" type="button">
+        🥨 Botanas
+       </button>
+      </div>
+      <div class="rejilla-productos" id="rejilla-productos">
+      </div>
+     </div>
+     <aside aria-labelledby="menu-escolar-titulo" class="calendario-panel">
+      <div class="calendario-encabezado">
+       <div>
+        <span class="etiqueta">
+         MENÚ ESCOLAR
+        </span>
+        <h3 id="menu-escolar-titulo">
+         🍽️ Platillos de la semana
+        </h3>
+        <p>
+         Consulta la comida programada para cada día.
+        </p>
+       </div>
+      </div>
+      <div class="menu-semanal" id="calendario-comidas">
+       <h4>
+        Menú de lunes a viernes
+       </h4>
+       <p class="menu-aviso">
+        Menú de ejemplo, puedes cambiar los platillos según tu cooperativa.
+       </p>
+       <div class="menu-dias">
+        <div class="menu-dia" data-dia="1">
+         <div class="menu-dia-nombre">
+          Lunes
+         </div>
+         <div class="menu-dia-detalle">
+          <strong>
+           🥪 Torta de jamón
+          </strong>
+          <span>
+           Con verduras frescas
+          </span>
+         </div>
+        </div>
+        <div class="menu-dia" data-dia="2">
+         <div class="menu-dia-nombre">
+          Martes
+         </div>
+         <div class="menu-dia-detalle">
+          <strong>
+           🌮 Tacos dorados
+          </strong>
+          <span>
+           Con lechuga y queso
+          </span>
+         </div>
+        </div>
+        <div class="menu-dia" data-dia="3">
+         <div class="menu-dia-nombre">
+          Miércoles
+         </div>
+         <div class="menu-dia-detalle">
+          <strong>
+           🧀 Quesadillas
+          </strong>
+          <span>
+           De queso o pollo
+          </span>
+         </div>
+        </div>
+        <div class="menu-dia" data-dia="4">
+         <div class="menu-dia-nombre">
+          Jueves
+         </div>
+         <div class="menu-dia-detalle">
+          <strong>
+           🍔 Hamburguesa
+          </strong>
+          <span>
+           Con verduras
+          </span>
+         </div>
+        </div>
+        <div class="menu-dia" data-dia="5">
+         <div class="menu-dia-nombre">
+          Viernes
+         </div>
+         <div class="menu-dia-detalle">
+          <strong>
+           🍕 Pizza
+          </strong>
+          <span>
+           Por rebanada
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </aside>
+    </div>
+   </section>
+  </main>
+  <div aria-live="polite" class="toast" hidden="" id="toast" role="status">
+  </div>
+  <!-- Información de la cooperativa y créditos del proyecto. -->
+  <footer class="footer">
+   <div class="footer-contenido">
+    <div class="footer-marca">
+     <img alt="CETIS 141" src="assets/logo.png"/>
+     <h3>
+      Cooperativa Escolar
+     </h3>
+    </div>
+    <div class="footer-seccion">
+     <h3>
+      Ubicación
+     </h3>
+     <p>
+      San Juan Teotihuacán, Estado de México
+     </p>
+     <p>
+      CETIS No. 141
+     </p>
+     <p>
+      Atención durante horario escolar
+     </p>
+    </div>
+    <div class="footer-seccion">
+     <h3>
+      Acerca de
+     </h3>
+     <p>
+      141 LEGENDS · Tienda escolar
+     </p>
+     <p>
+      Proyecto académico de aplicaciones web
+     </p>
+    </div>
+   </div>
+   <div class="footer-inferior">
+    <p>
+     © 2026 CETIS 141 | Cooperativa Escolar
+    </p>
+    <p>
+     Submódulo 1: Construye Aplicaciones Web
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>

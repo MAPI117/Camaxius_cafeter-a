@@ -1,0 +1,1137 @@
+/* ESTILOS GENERALES: estructura, encabezado, navegación y distribución de páginas. */
+* body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 30px;
+    background-color: #FFF8E7;
+    color: #292929
+}
+body[data-pagina="login"] main.container {
+    background:
+        linear-gradient(
+            rgba(40, 10, 20, 0.25),
+            rgba(40, 10, 20, 0.25)
+        ),
+        url("fondo-login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 610px;
+    padding: 45px 25px;
+    border-radius: 18px;
+}
+header {
+    background-color: #6B1E2B;
+    color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px #4E342E
+}
+.encabezado {
+    background: #6B1E2B;
+    border-bottom: 4px solid #f5c542;
+    color: white;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.marca img {
+    width: 180px;
+    max-width: none;
+    height: auto;
+    border: none;
+    margin: 0;
+    display: block;
+}
+.nombre h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffd43b;
+    margin: 0;
+}
+.nombre p {
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.menu-principal ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+.menu-principal a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 14px;
+    margin: 0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.menu-principal a:hover {
+    background: #0b0b0b;
+    color: #ffd43b;
+    text-decoration: none;
+}
+header img {
+    width: 500px;
+}
+nav {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: #FFD966;
+    margin: 0 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: overline;
+}
+.container {
+    background: #F5EBDD;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px #4E342E;
+}
+.contenedor-principal {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+.titulo-seccion {
+    text-align: center;
+    color: #1a365d;
+    margin-bottom: 25px;
+}
+.rejilla-paquetes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.tarjeta {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+.tarjeta h3 {
+    color: #2b6cb0;
+    margin-bottom: 10px;
+}
+.tarjeta p {
+    color: #666;
+    margin-bottom: 10px;
+}
+.tarjeta .precio {
+    font-weight: bold;
+    color: #dd6b20;
+    font-size: 1.2rem;
+}
+img {
+    max-width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    border: 3px solid #6B1E2B;
+}
+.footer {
+    background-color: #6B1E2B;
+    color: #ffffff;
+    border-top: 8px solid #f5c542;
+    padding: 30px 30px 0;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.footer-contenido {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 35px;
+    padding-bottom: 35px;
+}
+.footer-marca img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    margin: 0 0 15px;
+    display: block;
+}
+.footer-marca h3 {
+    color: #f5c542;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.footer-seccion h3 {
+    color: #f5c542;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-seccion a {
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.footer-seccion a:hover {
+    color: #f5c542;
+}
+.footer-seccion p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 4px;
+}
+.footer-redes {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.footer-redes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: #800020;
+    color: #ffffff;
+    border: 2px solid #f5c542;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.footer-redes a:hover {
+    background-color: #111111;
+    color: #ffffff;
+    transform: translateY(-4px);
+}
+.footer-inferior {
+    border-top: 3px solid #f5c542;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.footer-inferior p {
+    color: #aaaaaa;
+    font-size: 12px;
+    margin: 0;
+}
+* {
+    box-sizing:border-box
+}
+body {
+    margin:0;
+    padding:20px;
+    color:#292929;
+    font-family:Arial,sans-serif;
+    min-height:100vh
+}
+button,input {
+    font:inherit
+}
+button {
+    cursor:pointer
+}
+.encabezado {
+    max-width:1280px;
+    margin:auto
+}
+.marca img {
+    width:90px;
+    margin:0
+}
+.menu-principal a {
+    margin:0
+}
+.menu-principal a.activo {
+    background:#531320;
+    color:#ffd43b
+}
+.container {
+    max-width:1100px;
+    margin:36px auto;
+    padding:32px;
+    background:#F2E0E3;
+    border-radius:18px;
+    box-shadow:0 5px 24px #361a1a12
+}
+.titulo-seccion {
+    color:#6B1E2B
+}
+.subtitulo {
+    text-align:center;
+    color: white;
+    margin-top:-12px;
+    margin-bottom:26px
+}
+.footer {
+    border-radius:15px 15px 0 0;
+    max-width:1280px;
+    margin:52px auto 0
+}
+.footer-marca img {
+    width:140px
+}
+.footer-contenido {
+    grid-template-columns:1.2fr 1fr 1fr
+}
+.boton-tarjeta,.btn {
+    display:inline-block;
+    border:0;
+    background:#6B1E2B;
+    color:white!important;
+    border-radius:9px;
+    padding:12px 19px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.2s
+}
+.btn:hover,.boton-tarjeta:hover {
+    background:#881f36;
+    transform:translateY(-1px)
+}
+.btn-dorado {
+    background:#f5c542;
+    color:#38201c!important
+}
+.btn-dorado:hover {
+    background:#e9b72a
+}
+.btn-claro {
+    background:#f3e8e9;
+    color:#6B1E2B!important
+}
+.btn-claro:hover {
+    background:#ead6da
+}
+.btn-peligro {
+    background:#a83434
+}
+.btn-peligro:hover {
+    background:#8b2424
+}
+.btn:disabled {
+    opacity:.45;
+    cursor:not-allowed;
+    transform:none
+}
+.etiqueta {
+    display:inline-block;
+    background:#fff4cb;
+    color:#6B1E2B;
+    padding:6px 10px;
+    border-radius:15px;
+    font-size:12px;
+    font-weight:800
+}
+.tarjeta {
+    border:1px solid #eadfe0;
+    box-shadow:0 7px 20px #35131310;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:22px
+}
+.tarjeta h3 {
+    color: white
+}
+.tarjeta p {
+    line-height:1.5;
+    margin:0
+}
+.tarjeta .precio {
+    color:#8a233b;
+    margin-top:auto
+}
+.tarjeta .btn {
+    align-self:stretch
+}
+.login-wrap {
+    max-width:490px;
+    margin:15px auto;
+    padding:38px;
+    background:#fff;
+    border:1px solid #eee0df;
+    border-radius:18px;
+    box-shadow:0 14px 40px #3b172015
+}
+.login-wrap h2 {
+    text-align:center;
+    color:#6B1E2B;
+    font-weight:800;
+    margin-bottom:8px
+}
+.login-wrap p {
+    text-align:center;
+    color:#736969
+}
+.formulario {
+    display:grid;
+    gap:9px;
+    margin-top:24px
+}
+.formulario label {
+    font-weight:700;
+    color:#45282d
+}
+.formulario input {
+    width:100%;
+    border:1px solid #cfc1c1;
+    border-radius:9px;
+    padding:13px;
+    margin-bottom:12px
+}
+.formulario input:focus {
+    outline:2px solid #ddb14a;
+    outline-offset:1px
+}
+.error {
+    color:#a12626;
+    font-weight:600;
+    min-height:22px
+}
+.aviso {
+    font-size:12px;
+    color:#6d6464!important
+}
+.barra-catalogo,.cabecera-carrito {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:22px
+}
+.saludo {
+    color: white;
+    font-weight:bold
+}
+.contador {
+    background:#f5c542;
+    color:#3c2026;
+    border-radius:30px;
+    padding:3px 8px;
+    font-size:12px
+}
+.toast {
+    position:fixed;
+    bottom:22px;
+    right:22px;
+    background:#3e2228;
+    color:white;
+    padding:15px 22px;
+    border-radius:12px;
+    box-shadow:0 7px 25px #0003;
+    z-index:10
+}
+.vacio {
+    text-align:center;
+    padding:45px 15px;
+    color:#6d6060
+}
+.vacio h3 {
+    color:#6B1E2B
+}
+.tabla-scroll {
+    overflow-x:auto
+}
+table.carrito-tabla {
+    width:100%;
+    border-collapse:collapse;
+    min-width:590px
+}
+table.carrito-tabla th,table.carrito-tabla td {
+    padding:16px 12px;
+    text-align:left;
+    border-bottom:1px solid #ece3e3
+}
+table.carrito-tabla th {
+    background:#f7eff0;
+    color:#6B1E2B
+}
+.cantidad {
+    display:flex;
+    align-items:center;
+    gap:12px
+}
+.cantidad button {
+    border:1px solid #d8b9c0;
+    background:white;
+    color:#6B1E2B;
+    border-radius:8px;
+    min-width:33px;
+    min-height:33px;
+    font-weight:bold
+}
+.cantidad button:hover {
+    background:#f5e5e8
+}
+.btn-eliminar {
+    border:0;
+    background:transparent;
+    color:#a12626;
+    font-weight:bold;
+    text-decoration:underline
+}
+.resumen {
+    display:flex;
+    justify-content:flex-end;
+    margin:25px 0
+}
+.resumen>div {
+    background:#faf3f2;
+    border:1px solid #eadcdd;
+    padding:22px;
+    border-radius:13px;
+    min-width:260px
+}
+.resumen strong {
+    font-size:26px;
+    color:#6B1E2B
+}
+.acciones {
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    flex-wrap:wrap
+}
+.pie-pagina {
+    margin-top:auto
+}
+.nota-demo {
+    padding:12px 15px;
+    border-left:4px solid #e6b83e;
+    background:#fff8df;
+    border-radius:6px;
+    color:#674d16;
+    margin-top:18px
+}
+@media(max-width:750px) {
+    body {
+        padding:10px
+    }
+    .encabezado {
+        justify-content:center;
+        padding:18px
+    }
+    .marca img {
+        width:70px
+    }
+    .nombre h1 {
+        font-size:20px
+    }
+    .menu-principal ul {
+        justify-content:center
+    }
+    .menu-principal a {
+        padding:9px 10px;
+        font-size:12px
+    }
+    .container {
+        padding:20px;
+        margin:20px auto
+    }
+    .login-wrap {
+        padding:23px
+    }
+    .rejilla-paquetes {
+        grid-template-columns:1fr
+    }
+    .footer {
+        padding:20px 18px 0
+    }
+    .footer-contenido {
+        grid-template-columns:1fr;
+        gap:22px
+    }
+    .footer-inferior {
+        flex-direction:column;
+        text-align:center
+    }
+    .acciones {
+        justify-content:center
+    }
+}
+/*pluto el que lo lea jejeejje*/
+body[data-pagina="compras"] main.container {
+    background:
+        linear-gradient(
+            rgba(40, 10, 20, 0.30),
+            rgba(40, 10, 20, 0.30)
+        ),
+        url("fondo-productos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 45px 30px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+body[data-pagina="compras"] .tarjeta {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+body[data-pagina="compras"] .titulo-seccion {
+    color: #6B1E2B;
+}
+@media (max-width: 600px) {
+    body[data-pagina="compras"] main.container {
+        padding: 25px 15px;
+        margin-top: 20px;
+    }
+    body[data-pagina="compras"] .tarjeta {
+        padding: 18px;
+    }
+}
+/* Nueva distribución del catálogo y calendario */
+body[data-pagina="compras"] .container {
+    max-width:1340px
+}
+body[data-pagina="compras"] .titulo-seccion {
+    margin:12px 0;
+    color:#fff;
+    font-size:clamp(27px,3vw,38px);
+    text-align:left
+}
+body[data-pagina="compras"] .subtitulo {
+    color:#f9e9e9;
+    text-align:left;
+    margin:0 0 10px
+}
+body[data-pagina="compras"] .saludo {
+    color:#fff6df;
+    margin:0
+}
+body[data-pagina="compras"] .barra-catalogo {
+    align-items:center;
+    margin-bottom:26px
+}
+.tienda-layout {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 320px;
+    align-items:start;
+    gap:22px
+}
+.tienda-principal,.calendario-panel {
+    background:#fff9f8;
+    border-radius:20px;
+    padding:24px;
+    box-shadow:0 12px 35px #2b10102a;
+    color:#3c2b30
+}
+.catalogo-encabezado {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap
+}
+.catalogo-encabezado h3 {
+    font-size:22px;
+    color:#6B1E2B;
+    margin:0 0 7px
+}
+.catalogo-encabezado p {
+    margin:0;
+    color:#78646a;
+    font-size:14px
+}
+.filtros-productos {
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding:19px 0 20px
+}
+.filtro {
+    border:1px solid #e6d5d7;
+    background:white;
+    border-radius:25px;
+    padding:9px 13px;
+    color:#70404b;
+    white-space:nowrap;
+    font-size:13px;
+    font-weight:700
+}
+.filtro.activo,.filtro:hover {
+    background:#6B1E2B;
+    border-color:#6B1E2B;
+    color:#fff
+}
+.rejilla-productos {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:15px
+}
+.producto-card {
+    background:white;
+    border:1px solid #f0e2e4;
+    border-radius:15px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 4px 14px #3513130b
+}
+.producto-figura {
+    height:112px;
+    display:grid;
+    place-items:center;
+    font-size:58px
+}
+.producto-info {
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:14px;
+    gap:7px
+}
+.producto-tipo {
+    text-transform:uppercase;
+    color:#9f6170;
+    font-size:10px;
+    letter-spacing:1px;
+    font-weight:800
+}
+.producto-info h4 {
+    margin:0;
+    color:#5b2332;
+    font-size:16px
+}
+.producto-info p {
+    margin:0;
+    color:#786e70;
+    font-size:12px;
+    line-height:1.4
+}
+.producto-pie {
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:10px;
+    margin-top:auto;
+    padding-top:13px
+}
+.producto-pie strong {
+    color:#6B1E2B;
+    font-size:18px
+}
+.btn-agregar {
+    padding:10px 8px;
+    font-size:12px;
+    text-align:center
+}
+.calendario-panel {
+    position:sticky;
+    top:18px
+}
+.calendario-encabezado h3 {
+    color:#6B1E2B;
+    margin:10px 0 16px;
+    font-size:23px
+}
+.calendario-navegacion {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+    text-transform:capitalize
+}
+.calendario-navegacion button {
+    border:1px solid #eed9dd;
+    background:#fff;
+    color:#6B1E2B;
+    width:32px;
+    height:32px;
+    border-radius:9px;
+    font-size:24px
+}
+.calendario-dias,.calendario-fechas {
+    display:grid;
+    grid-template-columns:repeat(7,minmax(0,1fr));
+    gap:4px;
+    text-align:center
+}
+.calendario-dias span {
+    font-size:11px;
+    font-weight:800;
+    color:#90636d;
+    padding-bottom:8px
+}
+.dia-calendario {
+    position:relative;
+    min-width:0;
+    aspect-ratio:1;
+    border:0;
+    border-radius:9px;
+    background:transparent;
+    color:#583d43;
+    font-weight:700;
+    font-size:12px
+}
+.dia-calendario.tiene-especial {
+    background:#f9e8eb;
+    color:#73283c
+}
+.dia-calendario.tiene-especial::after {
+    content:"";
+    position:absolute;
+    bottom:3px;
+    left:calc(50% - 2px);
+    background:#bc526a;
+    width:4px;
+    height:4px;
+    border-radius:100%
+}
+.dia-calendario.hoy {
+    outline:2px solid #d3a53b;
+    outline-offset:-2px
+}
+.dia-calendario.seleccionado,.dia-calendario:hover {
+    background:#6B1E2B;
+    color:white
+}
+.calendario-indicacion {
+    font-size:11px;
+    color:#816f72;
+    margin:15px 0;
+    display:flex;
+    align-items:center;
+    gap:6px
+}
+.calendario-punto {
+    display:inline-block;
+    width:8px;
+    height:8px;
+    background:#bc526a;
+    border-radius:50%
+}
+.especial-elegido {
+    border-radius:14px;
+    background:#f9edef;
+    padding:17px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:9px
+}
+.especial-elegido h4 {
+    margin:0 0 4px;
+    color:#6B1E2B;
+    text-transform:capitalize
+}
+.especial-elegido strong {
+    color:#5c2432
+}
+.especial-elegido p {
+    font-size:13px;
+    color:#6c5d61;
+    margin:0
+}
+.especial-icono {
+    font-size:35px
+}
+.precio-especial {
+    color:#76263e
+}
+.especial-elegido .btn {
+    font-size:12px;
+    width:100%;
+    margin-top:5px
+}
+.menu-semanal {
+    margin-top:22px;
+    border-top:1px solid #eddee0;
+    padding-top:14px
+}
+.menu-semanal h4 {
+    color:#6B1E2B;
+    margin:0 0 12px
+}
+.fila-menu {
+    border:0;
+    border-bottom:1px solid #f1e5e6;
+    background:transparent;
+    width:100%;
+    text-align:left;
+    padding:10px 1px;
+    font-size:12px;
+    color:#654c53;
+    line-height:1.5
+}
+.fila-menu:hover {
+    color:#6B1E2B;
+    background:#fcf1f3
+}
+@media(max-width:1050px) {
+    .tienda-layout {
+        grid-template-columns:minmax(0,1fr) 290px
+    }
+    .rejilla-productos {
+        grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+}
+@media(max-width:760px) {
+    .tienda-layout {
+        grid-template-columns:1fr
+    }
+    .calendario-panel {
+        position:static
+    }
+    .rejilla-productos {
+        grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+    .tienda-principal,.calendario-panel {
+        padding:17px
+    }
+}
+@media(max-width:430px) {
+    .rejilla-productos {
+        gap:9px
+    }
+    .producto-figura {
+        height:95px;
+        font-size:46px
+    }
+    .producto-info {
+        padding:10px
+    }
+    .producto-info h4 {
+        font-size:14px
+    }
+    .producto-pie strong {
+        font-size:16px
+    }
+}
+/* Menú escolar semanal: tarjetas sencillas como la referencia */
+.calendario-semanal-panel {
+    padding:16px;
+    background:#fff9f8;
+    border-radius:17px
+}
+.calendario-semanal-panel .calendario-encabezado .etiqueta {
+    font-size:10px;
+    padding:5px 9px
+}
+.calendario-semanal-panel .calendario-encabezado h3 {
+    font-size:19px;
+    margin:6px 0 4px;
+    line-height:1.25
+}
+.calendario-semanal-panel .calendario-encabezado p {
+    margin:0 0 14px;
+    font-size:11px;
+    color:#81565e
+}
+.tarjetas-menu-semanal {
+    display:grid;
+    gap:11px
+}
+.menu-dia-card {
+    border:1px solid #eddcda;
+    border-radius:14px;
+    overflow:hidden;
+    background:#fff
+}
+.menu-dia-cabecera {
+    background:#fff2cb;
+    padding:10px 12px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+    color:#6b1e2b
+}
+.menu-dia-cabecera strong {
+    font-size:14px
+}
+.menu-dia-cabecera span {
+    font-size:10px;
+    color:#9d4d25;
+    text-align:right
+}
+.menu-dia-contenido {
+    padding:11px 12px
+}
+.menu-dia-resumen {
+    display:flex;
+    gap:10px;
+    align-items:center;
+    min-width:0
+}
+.menu-dia-figura {
+    flex:0 0 72px;
+    height:54px;
+    background:#fff8f2;
+    border:5px solid #faeee6;
+    border-radius:11px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:1px
+}
+.menu-dia-emoji {
+    font-size:20px;
+    line-height:1.1
+}
+.menu-dia-figura small {
+    font-size:7px;
+    color:#933e37
+}
+.menu-dia-informacion {
+    min-width:0;
+    flex:1
+}
+.menu-dia-informacion h4 {
+    font-size:14px;
+    line-height:1.3;
+    margin:0 0 5px;
+    color:#6b1e2b
+}
+.menu-dia-informacion p {
+    font-size:12px;
+    line-height:1.35;
+    margin:0 0 4px;
+    color:#74565a
+}
+.menu-dia-precio {
+    font-size:16px;
+    color:#861d34
+}
+.menu-dia-boton {
+    width:100%;
+    margin-top:8px;
+    border:0;
+    border-radius:7px;
+    background:#6b1e2b;
+    color:white;
+    font-size:13px;
+    font-weight:700;
+    padding:9px 7px;
+    cursor:pointer;
+    transition:background .2s
+}
+.menu-dia-boton:hover,.menu-dia-boton:focus-visible {
+    background:#8c3043
+}
+@media(min-width:1060px) {
+    .tienda-layout {
+        grid-template-columns:minmax(0,1fr) 365px
+    }
+}
+@media(min-width:761px) and (max-width:1059px) {
+    .tienda-layout {
+        grid-template-columns:minmax(0,1fr) 320px
+    }
+}
+@media(max-width:760px) {
+    .calendario-semanal-panel {
+        padding:16px
+    }
+}
+
+/* ===== Estilos propios de compras.html (antes incluidos dentro del HTML) ===== */
+/* ESTILOS LOCALES: ajustes que se aplican solo a esta página. */
+/* Estilos exclusivos del calendario de compras */
+#calendario-comidas .menu-aviso {
+    font-size:.78rem;
+    opacity:.72;
+    line-height:1.4;
+    margin:8px 0 12px
+}
+#calendario-comidas .menu-dias {
+    display:grid;
+    gap:10px;
+    margin-top:12px
+}
+#calendario-comidas .menu-dia {
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px;
+    border:1px solid #e8dde0;
+    border-radius:12px;
+    background:#fff;
+    box-shadow:0 2px 7px #3210180a
+}
+#calendario-comidas .menu-dia-nombre {
+    flex:0 0 82px;
+    color:#6b1e2b;
+    font-weight:800;
+    font-size:.85rem
+}
+#calendario-comidas .menu-dia-detalle {
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    min-width:0
+}
+#calendario-comidas .menu-dia-detalle strong {
+    font-size:.9rem;
+    color:#35252a
+}
+#calendario-comidas .menu-dia-detalle span {
+    font-size:.76rem;
+    color:#786c70
+}
+#calendario-comidas .menu-dia.hoy {
+    background:#fff5db;
+    border-color:#d7a340
+}
+#calendario-comidas .menu-dia.hoy .menu-dia-nombre::after {
+    content:" • Hoy";
+    color:#a46e05;
+    font-size:.75rem
+}
+.producto-figura {
+    overflow:hidden
+}
+.producto-figura img {
+    width:100%;
+    height:100%;
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    display:block
+}
