@@ -631,17 +631,17 @@ body[data-pagina="compras"] .container {
 }
 body[data-pagina="compras"] .titulo-seccion {
     margin:12px 0;
-    color:#fff;
+    color:#fff6df;
     font-size:clamp(27px,3vw,38px);
     text-align:left
 }
 body[data-pagina="compras"] .subtitulo {
-    color:#f9e9e9;
+    color:#fff6df;
     text-align:left;
     margin:0 0 10px
 }
 body[data-pagina="compras"] .saludo {
-    color:#fff6df;
+    color:#6B1E2B;
     margin:0
 }
 body[data-pagina="compras"] .barra-catalogo {
